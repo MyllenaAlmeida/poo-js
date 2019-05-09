@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste</title>
+    <script>
+        //modelo do objeto
+        //nomeacao de classe seguindo o CamelCase
+        class ContaBancaria{
+
+            //instanciando a classe
+            constructor(){
+                //this faz a conexao da variavel com a classe
+                this.agencia = 1076
+                this.numeroConta = 789123
+                this.saldo = 50
+                this.limite = 1000
+
+            }
+            depositar(valorDeposito) {
+               this.saldo+=valorDeposito
+            }
+            sacar(valorSaque) {
+                this.saldo-=valorSaque
+            }
+            consultarSaldo() {
+                return this.saldo
+            }
+        }
+
+        let criaObjeto = new ContaBancaria()
+
+       console.log( criaObjeto.consultarSaldo())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
